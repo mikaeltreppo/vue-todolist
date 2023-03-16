@@ -28,8 +28,11 @@
 
             <ul v-if="listTasks.length > 0">
                 <!--fallito-->
+
+           
+
                 <li v-for="(task, index) in listTasks">
-                    <span @click="boolReverse">{{task.name}}</span>
+                    <span  @click="boolReverse">{{task.name}}</span>
                     <i @click="remove(index)" class="fa-solid fa-xmark ms-4"></i>
                 </li>
 
