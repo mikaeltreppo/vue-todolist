@@ -34,18 +34,13 @@ createApp({
         addItem(){
             let itemNew = {
                 name:this.newItem,
-                bool: !bool
+             
             }
             this.listTasks.push(itemNew);
             this.newItem = ""
         },
         remove(index){
             this.listTasks.splice(index, 1)
-        },
-        //fallito
-        boolReverse(){
-            this.listTasks[2].bool=false
-          
         }
     }
 }).mount('#app')

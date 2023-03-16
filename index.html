@@ -22,21 +22,15 @@
     <div id="app" class=" d-flex justify-content-center align-center flex-wrap">
         <!--input-->
         <input class="ms_input" type="text" placeholder="Scrivi qui cosa fare" v-model="newItem">
-        <button class="rounded-pill ms-2" @click="addItem">Add Task</button>
+        <button class="rounded-pill ms-2" @click="addItem" >Add Task</button>
         <!--tasks-->
         <div class="w-100 text-center">
 
             <ul v-if="listTasks.length > 0">
-                <!--fallito-->
-
-           
-
                 <li v-for="(task, index) in listTasks">
-                    <span  @click="boolReverse">{{task.name}}</span>
+                    <span>{{task.name}}</span>
                     <i @click="remove(index)" class="fa-solid fa-xmark ms-4"></i>
                 </li>
-
-
             </ul>
             <h3 v-else>Bene hai finito!!!</h3>
         </div>
