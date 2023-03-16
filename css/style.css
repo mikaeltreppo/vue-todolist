@@ -1,0 +1,10 @@
+header img{
+    width: 70px;
+}
+header h1{
+    line-height: 70px;
+}
+.ms_input, #app button{
+    height: 50px;
+    
+}
