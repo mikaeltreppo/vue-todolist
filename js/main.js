@@ -11,35 +11,35 @@ createApp({
                 {
                     name: "Cucinare",
                     bool: true
-                }, 
+                },
                 {
                     name: "Nuotare",
                     bool: true
                 },
-                 {
+                {
                     name: "Mangiare",
                     bool: true
                 },
-                 {
+                {
                     name: "Lavarsi",
                     bool: true
                 },
             ],
-       
-            newItem:"",
-        
+
+            newItem: "",
+
         }
     },
     methods: {
-        addItem(){
+        addItem() {
             let itemNew = {
-                name:this.newItem,
-             
+                name: this.newItem,
+
             }
             this.listTasks.push(itemNew);
             this.newItem = ""
         },
-        remove(index){
+        remove(index) {
             this.listTasks.splice(index, 1)
         }
     }
