@@ -9,3 +9,6 @@ header h1{
 .ms_input, #app button{
     height: 50px;
 }
+.barra{
+    text-decoration: line-through;
+}

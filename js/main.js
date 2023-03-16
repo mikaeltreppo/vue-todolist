@@ -41,6 +41,11 @@ createApp({
         },
         remove(index){
             this.listTasks.splice(index, 1)
+        },
+        //fallito
+        boolReverse(){
+            this.listTasks[2].bool=false
+          
         }
     }
 }).mount('#app')

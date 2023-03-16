@@ -27,10 +27,13 @@
         <div class="w-100 text-center">
 
             <ul v-if="listTasks.length > 0">
+                <!--fallito-->
                 <li v-for="(task, index) in listTasks">
-                    <span>{{task.name}}</span>
+                    <span @click="boolReverse">{{task.name}}</span>
                     <i @click="remove(index)" class="fa-solid fa-xmark ms-4"></i>
                 </li>
+
+
             </ul>
             <h3 v-else>Bene hai finito!!!</h3>
         </div>
