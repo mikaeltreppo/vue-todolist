@@ -6,26 +6,26 @@ createApp({
             listTasks: [
                 {
                     name: "Lavatrice",
-                    bool: ""
+                    bool: true
                 },
                 {
                     name: "Cucinare",
-                    bool: ""
+                    bool: true
                 }, 
                 {
                     name: "Nuotare",
-                    bool: ""
+                    bool: true
                 },
                  {
                     name: "Mangiare",
-                    bool: ""
+                    bool: true
                 },
                  {
                     name: "Lavarsi",
-                    bool: ""
+                    bool: true
                 },
             ],
-            activeTask : 0,
+       
             newItem:"",
         
         }
@@ -34,12 +34,12 @@ createApp({
         addItem(){
             let itemNew = {
                 name:this.newItem,
-                bool:""
+                bool: !bool
             }
             this.listTasks.push(itemNew);
             this.newItem = ""
         },
-        remove(index){    console.log(newItem),
+        remove(index){
             this.listTasks.splice(index, 1)
         }
     }

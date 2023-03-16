@@ -24,7 +24,7 @@
         <input class="ms_input" type="text" placeholder="Scrivi qui cosa fare" v-model="newItem">
         <button class="rounded-pill ms-2" @click="addItem">Add Task</button>
         <!--tasks-->
-        <div class="w-100">
+        <div class="w-100 text-center">
 
             <ul v-if="listTasks.length > 0">
                 <li v-for="(task, index) in listTasks">

@@ -1,4 +1,6 @@
-header img{
+*{
+    list-style: none;
+}header img{
     width: 70px;
 }
 header h1{
