@@ -28,7 +28,7 @@
 
             <ul v-if="listTasks.length > 0">
                 <li v-for="(task, index) in listTasks">
-                    <span>{{task.name}}</span>
+                    <span @click="task.bool=!task.bool" :class="task.bool==true?'barra':''">{{task.name}}</span>
                     <i @click="remove(index)" class="fa-solid fa-xmark ms-4"></i>
                 </li>
             </ul>
